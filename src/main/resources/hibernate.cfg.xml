@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/admission?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Hong3107</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.connection.pool_size">1000</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Mapping for new tables -->
+        <!-- initial records -->
+        <mapping class="com.admission.model.User" />
+        <mapping class="com.admission.model.Student" />
+        <mapping class="com.admission.model.Major" />
+        <mapping class="com.admission.model.Block" />
+        <mapping class="com.admission.model.Subject" />
+        <mapping class="com.admission.model.MajorDetail" />
+        <mapping class="com.admission.model.Admission" />
+        <mapping class="com.admission.model.Setting" />
+    </session-factory>
+</hibernate-configuration>
