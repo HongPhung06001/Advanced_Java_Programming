@@ -1,0 +1,5 @@
+# Thiết lập ký tự kết thúc dòng cho các tệp Java
+*.java text eol=lf
+
+# Thiết lập ký tự kết thúc dòng cho tệp pom.xml
+pom.xml text eol=lf
