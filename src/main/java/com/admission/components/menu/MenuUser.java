@@ -1,8 +1,11 @@
 package com.admission.components.menu;
 
 import com.admission.event.EventMenuSelected;
-
-import java.awt.*;
+import java.awt.Color;
+import java.awt.GradientPaint;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 
 public class MenuUser extends javax.swing.JPanel {
 
@@ -34,12 +37,12 @@ public class MenuUser extends javax.swing.JPanel {
 
         panelMoving = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        listMenu1 = new ListMenu<>();
+        listMenu1 = new com.admission.components.menu.ListMenu<>();
 
         panelMoving.setOpaque(false);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel1.setForeground(new Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo-haui-size.png"))); // NOI18N
 
         javax.swing.GroupLayout panelMovingLayout = new javax.swing.GroupLayout(panelMoving);
@@ -81,7 +84,7 @@ public class MenuUser extends javax.swing.JPanel {
     protected void paintChildren(Graphics grphcs) {
         Graphics2D g2 = (Graphics2D) grphcs;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        GradientPaint g = new GradientPaint(0, 0, Color.decode("#1CB5E0"), 0, getHeight(), Color.decode("#000046"));
+        GradientPaint g = new GradientPaint(0, 0, Color.decode("#E6EAF"), 0, getHeight(), Color.decode("#4D6FFF"));
         g2.setPaint(g);
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), 0, 0);
         g2.fillRect(getWidth() - 20, 0, getWidth(), getHeight());
@@ -90,7 +93,7 @@ public class MenuUser extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private ListMenu<String> listMenu1;
+    private com.admission.components.menu.ListMenu<String> listMenu1;
     private javax.swing.JPanel panelMoving;
     // End of variables declaration//GEN-END:variables
 }

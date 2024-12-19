@@ -66,6 +66,7 @@ public class StatisticView extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jFilterYear.setBackground(new java.awt.Color(153, 204, 255));
         jFilterYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFilterYearActionPerformed(evt);
@@ -99,7 +100,7 @@ public class StatisticView extends javax.swing.JPanel {
         jLabel1.setText("Thống kê");
 
         table.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        table.setModel(new DefaultTableModel(
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },

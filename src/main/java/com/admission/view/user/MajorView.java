@@ -180,7 +180,6 @@ public class MajorView extends javax.swing.JPanel {
         jTenNganhDK.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
         jTenNganhDK.setFocusable(false);
 
-        jKhoiDK.setBackground(new java.awt.Color(255, 255, 255));
         jKhoiDK.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
@@ -189,9 +188,8 @@ public class MajorView extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel4.setText("Khối");
 
-        jNvDK.setBackground(new java.awt.Color(255, 255, 255));
         jNvDK.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        jNvDK.setModel(new DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        jNvDK.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
 
         javax.swing.GroupLayout panelBorder2Layout = new javax.swing.GroupLayout(panelBorder2);
         panelBorder2.setLayout(panelBorder2Layout);
@@ -254,7 +252,7 @@ public class MajorView extends javax.swing.JPanel {
         );
 
         table.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        table.setModel(new DefaultTableModel(
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -281,6 +279,8 @@ public class MajorView extends javax.swing.JPanel {
             table.getColumnModel().getColumn(5).setPreferredWidth(30);
         }
 
+        filterYear.setBackground(new java.awt.Color(153, 204, 255));
+        filterYear.setEditable(true);
         filterYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 filterYearActionPerformed(evt);

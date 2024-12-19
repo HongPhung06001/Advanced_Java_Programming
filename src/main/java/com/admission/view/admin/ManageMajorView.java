@@ -122,7 +122,7 @@ public class ManageMajorView extends JPanel {
         jTenNganh = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jKhoi = new javax.swing.JTextField();
-        jPanel1 = new JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jThem = new javax.swing.JButton();
         jSua = new javax.swing.JButton();
         jXoa = new javax.swing.JButton();
@@ -132,6 +132,8 @@ public class ManageMajorView extends JPanel {
         spTable = new javax.swing.JScrollPane();
         tableMajor = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
+
+        panelBorder1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel2.setText("ID");
@@ -151,6 +153,7 @@ public class ManageMajorView extends JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jThem.setBackground(new java.awt.Color(51, 153, 255));
         jThem.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
         jThem.setText("Thêm");
@@ -160,6 +163,7 @@ public class ManageMajorView extends JPanel {
             }
         });
 
+        jSua.setBackground(new java.awt.Color(51, 153, 255));
         jSua.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jSua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
         jSua.setText("Sửa");
@@ -169,6 +173,7 @@ public class ManageMajorView extends JPanel {
             }
         });
 
+        jXoa.setBackground(new java.awt.Color(51, 153, 255));
         jXoa.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
         jXoa.setText("Xóa");
@@ -178,6 +183,7 @@ public class ManageMajorView extends JPanel {
             }
         });
 
+        jClear.setBackground(new java.awt.Color(51, 153, 255));
         jClear.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Refresh.png"))); // NOI18N
         jClear.setText("Làm mới");
@@ -225,7 +231,7 @@ public class ManageMajorView extends JPanel {
         jLabel1.setText("Quản lý chuyên ngành");
 
         tableMajor.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        tableMajor.setModel(new DefaultTableModel(
+        tableMajor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -447,7 +453,7 @@ public class ManageMajorView extends JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField jMaNganh;
-    private JPanel jPanel1;
+    private javax.swing.JPanel jPanel1;
     private com.admission.components.search.Search jSearch;
     private javax.swing.JButton jSua;
     private javax.swing.JTextField jTenNganh;

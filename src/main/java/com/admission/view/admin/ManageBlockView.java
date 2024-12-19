@@ -113,7 +113,7 @@ public class ManageBlockView extends JPanel {
         jId = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jMonHoc = new javax.swing.JTextField();
-        jPanel1 = new JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jThem = new javax.swing.JButton();
         jSua = new javax.swing.JButton();
         jXoa = new javax.swing.JButton();
@@ -138,6 +138,7 @@ public class ManageBlockView extends JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jThem.setBackground(new java.awt.Color(51, 153, 255));
         jThem.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
         jThem.setText("Thêm");
@@ -147,6 +148,7 @@ public class ManageBlockView extends JPanel {
             }
         });
 
+        jSua.setBackground(new java.awt.Color(51, 153, 255));
         jSua.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jSua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
         jSua.setText("Sửa");
@@ -156,6 +158,7 @@ public class ManageBlockView extends JPanel {
             }
         });
 
+        jXoa.setBackground(new java.awt.Color(51, 153, 255));
         jXoa.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
         jXoa.setText("Xóa");
@@ -165,6 +168,7 @@ public class ManageBlockView extends JPanel {
             }
         });
 
+        jClear.setBackground(new java.awt.Color(51, 153, 255));
         jClear.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Refresh.png"))); // NOI18N
         jClear.setText("Làm mới");
@@ -211,7 +215,7 @@ public class ManageBlockView extends JPanel {
         jLabel1.setText("Quản lý khối");
 
         tableBlock.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        tableBlock.setModel(new DefaultTableModel(
+        tableBlock.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -232,6 +236,7 @@ public class ManageBlockView extends JPanel {
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel4.setText("Mã khối");
 
+        jChonMon.setBackground(new java.awt.Color(153, 204, 255));
         jChonMon.setText("Chọn môn");
         jChonMon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -425,7 +430,7 @@ public class ManageBlockView extends JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jMaKhoi;
     private javax.swing.JTextField jMonHoc;
-    private JPanel jPanel1;
+    private javax.swing.JPanel jPanel1;
     private com.admission.components.search.Search jSearch;
     private javax.swing.JButton jSua;
     private javax.swing.JButton jThem;

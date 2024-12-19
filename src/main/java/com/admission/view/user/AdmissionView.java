@@ -220,7 +220,6 @@ public class AdmissionView extends javax.swing.JPanel {
         jLabel9.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel9.setText("Tên ngành");
 
-        jKhoiDK.setBackground(new java.awt.Color(255, 255, 255));
         jKhoiDK.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
@@ -229,11 +228,9 @@ public class AdmissionView extends javax.swing.JPanel {
         jLabel11.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel11.setText("Khối");
 
-        jNvDK.setBackground(new java.awt.Color(255, 255, 255));
         jNvDK.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        jNvDK.setModel(new DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        jNvDK.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
 
-        jTenNganhDK.setBackground(new java.awt.Color(255, 255, 255));
         jTenNganhDK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTenNganhDKActionPerformed(evt);
@@ -302,7 +299,7 @@ public class AdmissionView extends javax.swing.JPanel {
         );
 
         table.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        table.setModel(new DefaultTableModel(
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -332,6 +329,7 @@ public class AdmissionView extends javax.swing.JPanel {
 
         jPanelButton.setBackground(new java.awt.Color(255, 255, 255));
 
+        jThem.setBackground(new java.awt.Color(51, 153, 255));
         jThem.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
         jThem.setText("Thêm nguyện vọng");
@@ -341,6 +339,7 @@ public class AdmissionView extends javax.swing.JPanel {
             }
         });
 
+        jSua.setBackground(new java.awt.Color(51, 153, 255));
         jSua.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jSua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
         jSua.setText("Sửa nguyện vọng");
@@ -350,6 +349,7 @@ public class AdmissionView extends javax.swing.JPanel {
             }
         });
 
+        jXoa.setBackground(new java.awt.Color(51, 153, 255));
         jXoa.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
         jXoa.setText("Xóa nguyện vọng");
@@ -416,12 +416,10 @@ public class AdmissionView extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel5.setText("Khối");
 
-        jNguyenVong.setBackground(new java.awt.Color(255, 255, 255));
-        jNguyenVong.setModel(new DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        jNguyenVong.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
         jNguyenVong.setMinimumSize(new java.awt.Dimension(36, 28));
         jNguyenVong.setPreferredSize(new java.awt.Dimension(36, 28));
 
-        jKhoi.setBackground(new java.awt.Color(255, 255, 255));
         jKhoi.setMinimumSize(new java.awt.Dimension(36, 28));
         jKhoi.setPreferredSize(new java.awt.Dimension(36, 28));
 

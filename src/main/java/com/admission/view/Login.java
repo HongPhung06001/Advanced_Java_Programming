@@ -6,6 +6,7 @@ import com.admission.dto.LoginResponse;
 import com.admission.utils.CurrentUserLogin;
 import com.admission.view.admin.AdminLayout;
 import com.admission.view.user.UserLayout;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -70,26 +71,26 @@ public class Login extends javax.swing.JFrame {
                 buttonLoginActionPerformed(evt);
             }
         });
-        jPanel2.add(buttonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 300, 47));
+        jPanel2.add(buttonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 300, 47));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo-haui.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 21, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tuyenSinhHaUI.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 590, 190));
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel1.setText("Tên đăng nhập/CMND/CCCD");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 231, -1));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 231, -1));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel2.setText("Mật khẩu");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 175, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 175, -1));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("_________________________________________");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 223, -1, 20));
+        jLabel4.setText("_________________________________________________");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 260, 20));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/lock.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, 32));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 30, 32));
 
         hidden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/hidden.png"))); // NOI18N
         hidden.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -97,7 +98,7 @@ public class Login extends javax.swing.JFrame {
                 hiddenMouseClicked(evt);
             }
         });
-        jPanel2.add(hidden, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 30, 32));
+        jPanel2.add(hidden, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 30, 32));
 
         show.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/eye.png"))); // NOI18N
         show.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -105,26 +106,26 @@ public class Login extends javax.swing.JFrame {
                 showMouseClicked(evt);
             }
         });
-        jPanel2.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 30, 32));
+        jPanel2.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 30, 32));
 
-        jLabel7.setText("_________________________________________");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 326, -1, -1));
+        jLabel7.setText("_________________________________________________");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 260, 20));
 
         fogotPass.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         fogotPass.setForeground(new java.awt.Color(66, 133, 244));
         fogotPass.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         fogotPass.setText("Quên mật khẩu");
-        jPanel2.add(fogotPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, -1, -1));
+        jPanel2.add(fogotPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 0, 0));
         jLabel8.setText("Bạn quên mật khẩu?");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 117, -1));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, 117, -1));
 
         jLabel9.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 0, 0));
         jLabel9.setText("Bạn chưa có tài khoản?");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 390, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, -1, -1));
 
         signup.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         signup.setForeground(new java.awt.Color(66, 133, 244));
@@ -135,32 +136,38 @@ public class Login extends javax.swing.JFrame {
                 signupMouseClicked(evt);
             }
         });
-        jPanel2.add(signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, -1, -1));
+        jPanel2.add(signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, -1, -1));
 
         jusername.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
         jusername.setBorder(null);
         jusername.setOpaque(true);
-        jPanel2.add(jusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 260, 50));
+        jPanel2.add(jusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 240, 30));
 
         jpassword.setBorder(null);
         jpassword.setOpaque(true);
-        jPanel2.add(jpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 260, 50));
+        jPanel2.add(jpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 230, 30));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/user-solid-24.png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 200, 30, 32));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 30, 32));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 661, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 758, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 599, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        setSize(new java.awt.Dimension(675, 530));
+        setSize(new java.awt.Dimension(772, 607));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

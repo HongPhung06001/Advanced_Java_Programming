@@ -8,7 +8,7 @@ import java.awt.*;
 public class TableHeader {
 
     public static JTableHeader customTableHeader(JTableHeader header) {
-        header.setFont(new Font("sansserif", 1, 13));
+        header.setFont(new Font("Cambri", 1, 13));
         header.setForeground(new Color(102, 102, 102));
         DefaultTableCellRenderer headerRenderer = (DefaultTableCellRenderer) header.getDefaultRenderer();
         headerRenderer.setHorizontalAlignment(SwingConstants.LEFT);

@@ -274,14 +274,16 @@ public class ManageStudentView extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jNgayCap = new com.toedter.calendar.JDateChooser();
         jGioiTinh = new javax.swing.JComboBox<>();
-        spTable = new JScrollPane();
-        tableStudent = new JTable();
+        spTable = new javax.swing.JScrollPane();
+        tableStudent = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jAvatar = new javax.swing.JLabel();
         jUpload = new javax.swing.JButton();
         jNgaySinh = new com.toedter.calendar.JDateChooser();
         jLabel15 = new javax.swing.JLabel();
         jSBD = new javax.swing.JTextField();
+
+        panelBorder1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel2.setText("ID");
@@ -324,8 +326,9 @@ public class ManageStudentView extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jThem.setBackground(new java.awt.Color(51, 153, 255));
         jThem.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jThem.setIcon(new ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
+        jThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
         jThem.setText("Thêm");
         jThem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,8 +336,9 @@ public class ManageStudentView extends javax.swing.JPanel {
             }
         });
 
+        jSua.setBackground(new java.awt.Color(51, 153, 255));
         jSua.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jSua.setIcon(new ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
+        jSua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
         jSua.setText("Sửa");
         jSua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -342,8 +346,9 @@ public class ManageStudentView extends javax.swing.JPanel {
             }
         });
 
+        jXoa.setBackground(new java.awt.Color(51, 153, 255));
         jXoa.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jXoa.setIcon(new ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
+        jXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
         jXoa.setText("Xóa");
         jXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,8 +356,9 @@ public class ManageStudentView extends javax.swing.JPanel {
             }
         });
 
+        jClear.setBackground(new java.awt.Color(51, 153, 255));
         jClear.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jClear.setIcon(new ImageIcon(getClass().getResource("/images/icon/Refresh.png"))); // NOI18N
+        jClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Refresh.png"))); // NOI18N
         jClear.setText("Làm mới");
         jClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -410,18 +416,16 @@ public class ManageStudentView extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 22)); // NOI18N
         jLabel1.setText("Quản lý sinh viên");
 
-        jNgayCap.setBorder(null);
         jNgayCap.setDateFormatString("yyyy-MM-dd");
         jNgayCap.setMinimumSize(new java.awt.Dimension(13, 28));
         jNgayCap.setPreferredSize(new java.awt.Dimension(13, 28));
 
-        jGioiTinh.setBackground(new java.awt.Color(255, 255, 255));
         jGioiTinh.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam", "Nữ" }));
         jGioiTinh.setMinimumSize(new java.awt.Dimension(13, 28));
         jGioiTinh.setPreferredSize(new java.awt.Dimension(13, 28));
 
         tableStudent.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        tableStudent.setModel(new DefaultTableModel(
+        tableStudent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null, null, null},
@@ -463,6 +467,8 @@ public class ManageStudentView extends javax.swing.JPanel {
         jAvatar.setText("                      Ảnh 3x4");
         jAvatar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jUpload.setBackground(new java.awt.Color(51, 153, 255));
+        jUpload.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jUpload.setText("Chọn ảnh");
         jUpload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -483,12 +489,11 @@ public class ManageStudentView extends javax.swing.JPanel {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jUpload)
-                    .addComponent(jAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0))
+                .addGap(77, 77, 77)
+                .addComponent(jUpload, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jNgaySinh.setDateFormatString("yyyy-MM-dd");
@@ -627,7 +632,7 @@ public class ManageStudentView extends javax.swing.JPanel {
         fileChooser.setDialogTitle("Chọn ảnh");
         fileChooser.setPreferredSize(new java.awt.Dimension(700, 500));
         FileNameExtensionFilter imageFilter
-                = new FileNameExtensionFilter("Image files (*.png, *.jpg, *.jpeg)", "jpg", "jpeg", "png");
+        = new FileNameExtensionFilter("Image files (*.png, *.jpg, *.jpeg)", "jpg", "jpeg", "png");
         fileChooser.setFileFilter(imageFilter);
         int result = fileChooser.showOpenDialog(this);
         if (result == JFileChooser.APPROVE_OPTION) {
@@ -642,48 +647,15 @@ public class ManageStudentView extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jUploadActionPerformed
 
+    private void jFilterYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFilterYearActionPerformed
+        loadStudents(jSearch.getKeyword().getText());
+    }//GEN-LAST:event_jFilterYearActionPerformed
+
     private void jClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jClearActionPerformed
         clearInput();
         jSearch.getKeyword().setText(null);
         loadStudents(jSearch.getKeyword().getText());
     }//GEN-LAST:event_jClearActionPerformed
-
-    private void jThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jThemActionPerformed
-        if (!validateInput()) {
-            return;
-        }
-        StudentDTO studentDTO = createStudentDTO();
-        try {
-            CommonResponse commonResponse = studentController.createStudent(studentDTO);
-            if (commonResponse.getStatus().equals(Boolean.TRUE)) {
-                new ConfirmDialog(null, "Thêm thành công", commonResponse.getMessage());
-                loadStudents(jSearch.getKeyword().getText());
-            } else {
-                JOptionPane.showMessageDialog(null, commonResponse.getMessage());
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Hệ thống đã xảy ra lỗi. Vui lòng quay lại sau!");
-        }
-    }//GEN-LAST:event_jThemActionPerformed
-
-    private void jSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSuaActionPerformed
-        if (!validateInput()) {
-            return;
-        }
-        StudentDTO studentDTO = createStudentDTO();
-        studentDTO.setId(Integer.valueOf(jId.getText()));
-        try {
-            CommonResponse commonResponse = studentController.updateStudent(studentDTO);
-            if (commonResponse.getStatus().equals(Boolean.TRUE)) {
-                new ConfirmDialog(null, "Cập nhật thành công", commonResponse.getMessage());
-                loadStudents(jSearch.getKeyword().getText());
-            } else {
-                JOptionPane.showMessageDialog(null, commonResponse.getMessage());
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Hệ thống đã xảy ra lỗi. Vui lòng quay lại sau!");
-        }
-    }//GEN-LAST:event_jSuaActionPerformed
 
     private void jXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jXoaActionPerformed
         int option = JOptionPane.showConfirmDialog(null, "Bạn có chắc chắn muốn xóa sinh viên này?", "Xác nhận xoá", JOptionPane.YES_NO_OPTION);
@@ -704,9 +676,42 @@ public class ManageStudentView extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jXoaActionPerformed
 
-    private void jFilterYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFilterYearActionPerformed
-        loadStudents(jSearch.getKeyword().getText());
-    }//GEN-LAST:event_jFilterYearActionPerformed
+    private void jSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSuaActionPerformed
+        if (!validateInput()) {
+            return;
+        }
+        StudentDTO studentDTO = createStudentDTO();
+        studentDTO.setId(Integer.valueOf(jId.getText()));
+        try {
+            CommonResponse commonResponse = studentController.updateStudent(studentDTO);
+            if (commonResponse.getStatus().equals(Boolean.TRUE)) {
+                new ConfirmDialog(null, "Cập nhật thành công", commonResponse.getMessage());
+                loadStudents(jSearch.getKeyword().getText());
+            } else {
+                JOptionPane.showMessageDialog(null, commonResponse.getMessage());
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Hệ thống đã xảy ra lỗi. Vui lòng quay lại sau!");
+        }
+    }//GEN-LAST:event_jSuaActionPerformed
+
+    private void jThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jThemActionPerformed
+        if (!validateInput()) {
+            return;
+        }
+        StudentDTO studentDTO = createStudentDTO();
+        try {
+            CommonResponse commonResponse = studentController.createStudent(studentDTO);
+            if (commonResponse.getStatus().equals(Boolean.TRUE)) {
+                new ConfirmDialog(null, "Thêm thành công", commonResponse.getMessage());
+                loadStudents(jSearch.getKeyword().getText());
+            } else {
+                JOptionPane.showMessageDialog(null, commonResponse.getMessage());
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Hệ thống đã xảy ra lỗi. Vui lòng quay lại sau!");
+        }
+    }//GEN-LAST:event_jThemActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jAvatar;
@@ -747,7 +752,7 @@ public class ManageStudentView extends javax.swing.JPanel {
     private javax.swing.JButton jUpload;
     private javax.swing.JButton jXoa;
     private com.admission.components.border.PanelBorder panelBorder1;
-    private JScrollPane spTable;
-    private JTable tableStudent;
+    private javax.swing.JScrollPane spTable;
+    private javax.swing.JTable tableStudent;
     // End of variables declaration//GEN-END:variables
 }

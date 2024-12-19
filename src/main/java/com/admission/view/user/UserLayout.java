@@ -2,7 +2,8 @@ package com.admission.view.user;
 
 import com.admission.event.EventMenuSelected;
 import com.admission.view.Login;
-import javax.swing.JComponent;
+
+import javax.swing.*;
 
 public class UserLayout extends javax.swing.JFrame {
 

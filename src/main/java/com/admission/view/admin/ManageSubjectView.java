@@ -111,6 +111,7 @@ public class ManageSubjectView extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jThem.setBackground(new java.awt.Color(102, 153, 255));
         jThem.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Add.png"))); // NOI18N
         jThem.setText("Thêm");
@@ -120,6 +121,7 @@ public class ManageSubjectView extends javax.swing.JPanel {
             }
         });
 
+        jSua.setBackground(new java.awt.Color(102, 153, 255));
         jSua.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jSua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Edit.png"))); // NOI18N
         jSua.setText("Sửa");
@@ -129,6 +131,7 @@ public class ManageSubjectView extends javax.swing.JPanel {
             }
         });
 
+        jXoa.setBackground(new java.awt.Color(102, 153, 255));
         jXoa.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Delete.png"))); // NOI18N
         jXoa.setText("Xóa");
@@ -138,6 +141,7 @@ public class ManageSubjectView extends javax.swing.JPanel {
             }
         });
 
+        jClear.setBackground(new java.awt.Color(102, 153, 255));
         jClear.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon/Refresh.png"))); // NOI18N
         jClear.setText("Làm mới");
@@ -184,7 +188,7 @@ public class ManageSubjectView extends javax.swing.JPanel {
         jLabel1.setText("Quản lý môn học của khối");
 
         tableSubject.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
-        tableSubject.setModel(new DefaultTableModel(
+        tableSubject.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -207,28 +211,30 @@ public class ManageSubjectView extends javax.swing.JPanel {
         panelBorder1Layout.setHorizontalGroup(
             panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBorder1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel2)
-                .addGap(63, 63, 63)
-                .addComponent(jId)
-                .addGap(70, 70, 70)
-                .addComponent(jLabel3)
-                .addGap(36, 36, 36)
-                .addComponent(jTenMH)
-                .addGap(310, 310, 310))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBorder1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(spTable)
-                .addContainerGap())
-            .addGroup(panelBorder1Layout.createSequentialGroup()
                 .addGroup(panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBorder1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spTable))
                     .addGroup(panelBorder1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelBorder1Layout.createSequentialGroup()
-                        .addGap(266, 266, 266)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                        .addGroup(panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelBorder1Layout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel2)
+                                .addGap(63, 63, 63)
+                                .addComponent(jId, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTenMH, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(panelBorder1Layout.createSequentialGroup()
+                                    .addGap(15, 15, 15)
+                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(panelBorder1Layout.createSequentialGroup()
+                                    .addGap(266, 266, 266)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 14, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         panelBorder1Layout.setVerticalGroup(
             panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

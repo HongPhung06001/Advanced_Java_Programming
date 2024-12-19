@@ -61,10 +61,10 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo-haui.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 21, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 21, 550, -1));
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jLabel1.setText("Họ Đệm");
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 231, -1));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
@@ -80,8 +80,8 @@ public class SignUp extends javax.swing.JFrame {
         jLabel2.setText("Tên");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 231, -1));
 
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("_________________________________________");
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, 20));
 
         jfirstName.setFont(new java.awt.Font("sansserif", 0, 13)); // NOI18N
@@ -182,16 +182,16 @@ public class SignUp extends javax.swing.JFrame {
         });
         jPanel1.add(jlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, -1, -1));
 
+        jButtonSignup.setText("Đăng ký");
         jButtonSignup.setBackground(new java.awt.Color(66, 133, 244));
         jButtonSignup.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButtonSignup.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonSignup.setText("Đăng ký");
         jButtonSignup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSignupActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonSignup, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 300, 40));
+        jPanel1.add(jButtonSignup, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 540, 300, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

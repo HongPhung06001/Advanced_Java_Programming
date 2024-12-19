@@ -152,20 +152,22 @@ public class ProfileView extends javax.swing.JPanel {
 
         panelBorder1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jUpload.setBackground(new java.awt.Color(153, 204, 255));
+        jUpload.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jUpload.setText("Chọn ảnh");
         jUpload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jUploadActionPerformed(evt);
             }
         });
-        panelBorder1.add(jUpload, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+        panelBorder1.add(jUpload, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 180, -1));
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 26)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(127, 127, 127));
         jLabel1.setText("Thông tin cá nhân");
         panelBorder1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, 38));
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Dân tộc");
         panelBorder1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, 60, -1));
@@ -174,7 +176,7 @@ public class ProfileView extends javax.swing.JPanel {
         jSBD.setBorder(null);
         panelBorder1.add(jSBD, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, 260, 30));
 
-        jLabel5.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setText("Họ Đệm");
         panelBorder1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 75, 60, -1));
@@ -186,12 +188,12 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel3.setText("________________________________________");
         panelBorder1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 115, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("Ngày sinh");
         panelBorder1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, 150, -1));
 
-        jLabel8.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("Số CMND/CCCD");
         panelBorder1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 155, 180, -1));
@@ -210,7 +212,7 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel9.setText("________________________________________");
         panelBorder1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 195, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setText("Tên");
         panelBorder1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 70, 90, -1));
@@ -222,12 +224,12 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel11.setText("________________________________________");
         panelBorder1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(671, 115, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(51, 51, 51));
         jLabel12.setText("Ngày cấp CMND/CCCD");
         panelBorder1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 155, 170, -1));
 
-        jLabel14.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(51, 51, 51));
         jLabel14.setText("Email");
         panelBorder1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 315, 60, -1));
@@ -239,7 +241,7 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel15.setText("________________________________________");
         panelBorder1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(671, 425, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(51, 51, 51));
         jLabel16.setText("Người cấp CMND/CCCD");
         panelBorder1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 235, 180, -1));
@@ -251,12 +253,12 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel17.setText("________________________________________");
         panelBorder1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 275, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(51, 51, 51));
         jLabel18.setText("Địa chỉ");
         panelBorder1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 390, 150, -1));
 
-        jLabel19.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(51, 51, 51));
         jLabel19.setText("Số điện thoại");
         panelBorder1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 315, 180, -1));
@@ -278,25 +280,24 @@ public class ProfileView extends javax.swing.JPanel {
         jLabel21.setText("________________________________________");
         panelBorder1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 355, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(51, 51, 51));
         jLabel22.setText("Số báo danh");
-        panelBorder1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 235, 90, -1));
+        panelBorder1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 235, 190, -1));
 
-        jLabel24.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(51, 51, 51));
         jLabel24.setText("Giới tính");
         panelBorder1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 470, 170, -1));
 
-        jNgayCap.setBorder(null);
         jNgayCap.setDateFormatString("yyyy-MM-dd");
         panelBorder1.add(jNgayCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, 260, 32));
 
-        jNgaySinh.setBorder(null);
         jNgaySinh.setDateFormatString("yyyy-MM-dd");
         panelBorder1.add(jNgaySinh, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 500, 260, 32));
 
         jNu.setBackground(new java.awt.Color(255, 255, 255));
+        jNu.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jNu.setText("Nữ");
         jNu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -306,6 +307,7 @@ public class ProfileView extends javax.swing.JPanel {
         panelBorder1.add(jNu, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 500, -1, -1));
 
         jNam.setBackground(new java.awt.Color(255, 255, 255));
+        jNam.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jNam.setText("Nam");
         jNam.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,12 +316,13 @@ public class ProfileView extends javax.swing.JPanel {
         });
         panelBorder1.add(jNam, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, -1));
 
+        jAvatar.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jAvatar.setText("                      Ảnh 3x4");
         jAvatar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panelBorder1.add(jAvatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 180, 235));
 
-        jButton1.setBackground(new java.awt.Color(66, 133, 244));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
+        jButton1.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Cập nhật");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -333,7 +336,7 @@ public class ProfileView extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelBorder1, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE)
+            .addComponent(panelBorder1, javax.swing.GroupLayout.DEFAULT_SIZE, 955, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
